@@ -29,3 +29,5 @@ while True:
     elif choice == "0":
         print("\n👋 Программа завершена")
         break
+    else:
+        print("\n⚠ Неверный выбор, попробуйте снова")
