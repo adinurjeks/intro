@@ -20,9 +20,12 @@ while True:
     choice = input("Выберите действие: ")
     if choice == "1":
         password = input("\nВведите пароль: ")
-    if check(password):
-        print("\n✅ Пароль подходит!")
-    else:
-        print("\n❌ Ошибка:")
-        print("   • минимум 2 цифры")
-        print("   • минимум 7 букв")
+        if check(password):
+            print("\n✅ Пароль подходит!")
+        else:
+            print("\n❌ Ошибка:")
+            print("   • минимум 2 цифры")
+            print("   • минимум 7 букв")
+    elif choice == "0":
+        print("\n👋 Программа завершена")
+        break
