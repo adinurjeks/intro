@@ -18,3 +18,5 @@ def show_menu():
 while True:
     show_menu()
     choice = input("Выберите действие: ")
+    if choice == "1":
+        password = input("\nВведите пароль: ")
