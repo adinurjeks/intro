@@ -10,13 +10,19 @@ def check(password):
     
     return digits >= 2 and letters >= 7
 
-def show_menu():
+def show():
     print("   🔐 ПРОВЕРКА СЛОЖНОСТИ ПАРОЛЯ")
     print("1 — Проверить пароль")
     print("0 — Выход")
 
 while True:
-    show_menu()
+    show()
     choice = input("Выберите действие: ")
     if choice == "1":
         password = input("\nВведите пароль: ")
+    if check(password):
+        print("\n✅ Пароль подходит!")
+    else:
+        print("\n❌ Ошибка:")
+        print("   • минимум 2 цифры")
+        print("   • минимум 7 букв")
