@@ -14,3 +14,7 @@ def show_menu():
     print("   🔐 ПРОВЕРКА СЛОЖНОСТИ ПАРОЛЯ")
     print("1 — Проверить пароль")
     print("0 — Выход")
+
+while True:
+    show_menu()
+    choice = input("Выберите действие: ")
