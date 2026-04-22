@@ -10,3 +10,7 @@ def check(password):
     
     return digits >= 2 and letters >= 7
 
+def show_menu():
+    print("   🔐 ПРОВЕРКА СЛОЖНОСТИ ПАРОЛЯ")
+    print("1 — Проверить пароль")
+    print("0 — Выход")
